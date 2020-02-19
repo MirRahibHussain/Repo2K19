@@ -1,37 +1,26 @@
+class Azhar{
 
-import java.util.Scanner;
-public class Calculator {
+public static void main(String args[]){
 
-	private static final int a = 0;
-	private static final int b = 0;
-	public static void main(String[] args) {
-		int num1,num2;
-		@SuppressWarnings("resource")
-		Scanner scanner=new Scanner(System.in);
-		
-		System.out.println("Enter a number");
-		num1=scanner.nextInt();
-		System.out.println("Enter an other number");
-		num2=scanner.nextInt();
-		System.out.println("Addition is "+add(num1,num2));
-		System.out.println("Subtraction is "+subtract(num1,num2));
-		System.out.println("Multiplication is "+multiply(num1,num2));
-		System.out.println("Division is "+divide(num1,num2));
+a=10;
+b=20;
+System.out.println("Addition is" +add(a,b));
+System.out.println("Subtraction is" +subtract(a,b));
+System.out.println("Multiplication is" +multiply(a,b));
+System.out.println("Division is" +divide(a,b));
 
-	}
-	
-	
-	private static int add(int num1, int num2) {
-	return a+b;
-	}
-    static int subtract(int a,int b){
-		return a-b;
-	}
-	static int multiply(int a,int b){
-		return a*b;
-	}
-	static int divide(int a,int b){
-		return a/b;
-	}
+}
 
+public static int add(float a,float b){
+return a+b;
+}
+public static int multiply(float a,float b){
+return a*b;
+}
+public static int subtract(float a,float b){
+return a-b;
+}
+public static int divide(float a,float b){
+return a/b;
+}
 }
